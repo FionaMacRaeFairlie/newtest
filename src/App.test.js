@@ -22,7 +22,7 @@ describe("Checks the heading of the document", () => {
     const { getByText } = render(<App />);
     const textValue = getByText("Display Users");
     expect(textValue).toBeInTheDocument();
-    screen.debug();
+    // screen.debug();
   });
 });
 

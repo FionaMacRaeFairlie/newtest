@@ -9,8 +9,6 @@ import TodoApp from './components/todo/Todoapp';
 function App(){
   const [status, setStatus] =  useState({isLoading: true});
   const [users, setUsers] =useState([])
-  const[ error,setError] =useState( null)
-  
 
   const fetchUsers= useCallback(() => {
     fetch(`https://jsonplaceholder.typicode.com/users`)
