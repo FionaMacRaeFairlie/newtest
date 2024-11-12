@@ -7,8 +7,9 @@ function Counter() {
   }
 
   return (
-    <div>
-      <button data-testid="Button" onClick={increment}>{count}</button>
+    <div className="border border-primary border-2 rounded m-2 p-2">
+      <p>Counter</p>
+      <button data-testid="Button"  className="btn btn-primary" onClick={increment}>{count}</button>
     </div>
   );
 }

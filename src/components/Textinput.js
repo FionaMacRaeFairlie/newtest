@@ -1,4 +1,4 @@
-import React ,{useState} from "react";
+import React, {useState} from "react";
 
 const Textinput = () => {
     const [nameField, setNameField] = useState("");
@@ -8,11 +8,11 @@ const Textinput = () => {
         <input
           className="form-control"
           type="text"
-          placeholder="Enter your name here ..."
+          placeholder="Enter your text here ..."
           value={nameField}
           onChange={(e) => setNameField(e.target.value)}
         />
-        <p className="coloredtext">{nameField}</p>
+        <p>{nameField}</p>
       </div>
     </>
   );

@@ -6,3 +6,9 @@
   display: flex;
   justify-content: center;
 }
+
+.textentered {
+  display:block;
+  height:30px;
+  min-height:2em;
+}

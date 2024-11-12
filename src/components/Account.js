@@ -1,8 +1,8 @@
 import React from "react";
 
 const style = {
-  width: "15rem",
-  margin: "2rem 0rem 0rem 15rem",
+  width: "20rem",
+  margin: "0rem 15rem 0rem 0rem",
 };
 
 const Account = ({ user }) => {

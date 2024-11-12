@@ -5,11 +5,11 @@ import "@testing-library/jest-dom";
 
 
 import App from "./App";
-import Account from "./Account";
-import Counter from "./Counter";
-import Greeting from "./Greeting";
-import Textinput from "./Textinput";
-import TodoApp from "./components/todo/Todoapp";
+import Account from './components/Account';
+import Counter from './components/Counter';
+import Greeting from './components/Greeting';
+import Textinput from './components/Textinput';
+import TodoApp from './components/todo/Todoapp';
 
 describe("App renders successfully", () => {
   it("renders App component", () => {
@@ -20,7 +20,7 @@ describe("App renders successfully", () => {
 describe("Checks the heading of the document", () => {
   it("checks the value of the text heading", () => {
     const { getByText } = render(<App />);
-    const textValue = getByText("Display Active Users Account Details");
+    const textValue = getByText("Display Users");
     expect(textValue).toBeInTheDocument();
     screen.debug();
   });
